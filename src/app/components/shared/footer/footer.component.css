@@ -1,0 +1,19 @@
+
+
+.footer {
+    background-color: #F2F2F2;
+}
+ .bd-footer {
+    font-size: .875rem;
+    text-align: left;
+ }
+
+
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ .text-muted {
+    color: #6c757d !important;
+}
