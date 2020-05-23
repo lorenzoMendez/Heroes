@@ -32,7 +32,8 @@ export class HeroesComponent implements OnInit {
     this.router.navigate( [ '/heroes', index ] );
   }
 
-  public getHeroe( index: number ): Heroe {
-    return this.heroes[ index ];
+  // Este metodo se ejecutara desde el componente hijo.
+  public showDataBetweenComponents( index: number ) {
+    console.log( index );
   }
 }

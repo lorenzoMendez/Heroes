@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Heroe } from 'src/app/models/Heroe';
 
 @Component({
@@ -8,13 +8,22 @@ import { Heroe } from 'src/app/models/Heroe';
   ]
 })
 export class HeroeCardComponent implements OnInit {
+  
+  /*
+    Una propiedad es recibidad desde afuera con el Input
+  */
+  @Input() public heroe: Heroe;
+  @Input() public index: number;
+  
+  // @Output() public heroeSelected: EventEmitter<number>;
 
-  
-  @Input public heroe: Heroe;
-  
-  constructor() { }
+  constructor() {
+    // Se necesita iniciarlizar
+    //this.heroeSelected = new EventEmitter();
+  }
 
   ngOnInit(): void {
+    // this.heroeSelected.emit( this.index );
   }
 
 }
